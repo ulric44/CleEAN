@@ -4,7 +4,6 @@
       <meta charset="utf-8">
       <title>Clé EAN</title>
       <link rel='stylesheet' href='css/bootstrap.min.css'>
-      <link rel='stylesheet' href='js/bootstrap.min.js'>
     </head>
     <body>
 <header> Formulaire d'obtention de la clé EAN :</header>
