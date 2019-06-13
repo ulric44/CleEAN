@@ -29,8 +29,7 @@ function RetourneCle($EAN)
       $tot = $tot + $EAN{$i} * 3;
     }
   }
-  $div = $tot / 10;
-  $div = partDecimale($div) * 10;
+  $div = $tot % 10;
   if($div == 0)
   {
     $vretour =  0;
@@ -51,15 +50,6 @@ function estPair($leChiffre)
   {
     $vretour = true;
   }
-  return $vretour;
-}
-
-function partDecimale($leChiffre)
-{
-  $vretour = 0;
-  $partEnt = 0;
-  $partEnt = floor($leChiffre);
-  $vretour = $leChiffre - $partEnt;
   return $vretour;
 }
  ?>
